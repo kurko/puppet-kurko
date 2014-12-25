@@ -25,4 +25,8 @@ class kurko::dotfiles {
     command => 'git pull --rebase origin master',
     cwd     => $dotfiles
   }
+
+  exec { 'defining ~/.gitignore':
+    command => 'git config --global core.excludesfile "${home}/.gitignore"'
+  }
 }
