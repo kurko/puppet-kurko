@@ -2,7 +2,6 @@ class kurko::osx {
   notice('Setting up OS X preferences')
 
   include osx::dock::autohide
-  include osx::software_update
   include osx::keyboard::capslock_to_control
   include osx::global::tap_to_click
   include osx::global::enable_keyboard_control_access
