@@ -17,7 +17,7 @@ class kurko::dotfiles {
   }
 
   exec { 'installing dotfiles':
-    command => 'sh install.sh',
+    command => "bash -c 'source ${dotfiles}/install'",
     cwd     => $dotfiles
   }
 
