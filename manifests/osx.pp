@@ -9,10 +9,10 @@ class kurko::osx {
   include osx::no_network_dsstores
 
   class { 'osx::dock::icon_size':
-    size => 16
+    size => 32
   }
 
   class { 'osx::dock::position':
-    position => 'right'
+    position => 'left'
   }
 }
