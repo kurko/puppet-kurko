@@ -4,6 +4,8 @@ class kurko::development {
   include brewcask
   include vundle
   include iterm2::stable
+  include phantomjs
+  include imagemagick
 
   package {
     [ 'tmux',
