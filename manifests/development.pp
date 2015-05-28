@@ -6,6 +6,7 @@ class kurko::development {
   include iterm2::stable
   include phantomjs
   include imagemagick
+  include fonts::adobe::sourcecodepro
 
   package {
     [ 'tmux',
